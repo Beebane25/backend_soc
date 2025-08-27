@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'logs',
+    "corsheaders",
 ]
 
 MIDDLEWARE = [
@@ -54,6 +55,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    "corsheaders.middleware.CorsMiddleware",
 ]
 
 ROOT_URLCONF = 'soc_backend.urls'
@@ -74,7 +76,9 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'soc_backend.wsgi.application'
-
+CORS_ALLOWED_ORIGINS = [
+    "https://frontend-soc-beebane25s-projects.vercel.app/",  # domain frontend
+]
 
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
