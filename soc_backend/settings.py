@@ -77,7 +77,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'soc_backend.wsgi.application'
 CORS_ALLOWED_ORIGINS = [
-    "https://frontend-soc-beebane25s-projects.vercel.app/",  # domain frontend
+    "https://frontend-fuvfgg88t-beebane25s-projects.vercel.app/",  # domain frontend
 ]
 
 # Database
