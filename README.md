@@ -1,7 +1,24 @@
-# Mini SOC Dashboard — Backend (Django REST API)
+# 🛡️ Mini SOC Dashboard (Full Functioning Web App)
 
-**Ringkasan singkat**
-Repo ini berisi **backend** untuk proyek capstone *Mini SOC Dashboard* — sebuah **Django REST API** yang menyajikan data log keamanan (dummy → bisa dihubungkan ke agent nyata) untuk dikonsumsi oleh frontend (React/Next.js) yang dideploy terpisah. README ini ditulis khusus sebagai halaman GitHub untuk bagian *backend* (penjelasan, setup, dan deploy).
+Mini SOC Dashboard adalah aplikasi berbasis web yang dirancang untuk membantu tim keamanan dalam **memantau keamanan sistem secara real-time**.  
+Proyek ini dibangun dengan **Python Django REST API** sebagai backend dan **React.js** sebagai frontend.
+
+---
+
+## Deskripsi
+Proyek ini dibuat sebagai bagian dari **Capstone Project**, dengan tujuan:
+- Menyediakan platform monitoring sederhana seperti **SOC (Security Operation Center)** mini.
+- Memberikan visualisasi data keamanan (alert, log, aktivitas user).
+- Memberikan gambaran nyata bagaimana aplikasi **frontend ↔ backend ↔ database** saling terhubung.
+
+---
+
+## Arsitektur Sistem
+```mermaid
+flowchart LR
+  User[👤 User] --> |HTTP/HTTPS| Frontend[🌐 React.js Frontend]
+  Frontend --> |REST API| Backend[⚙️ Django REST API]
+  Backend --> |SQL Query| Database[(🗄️ PostgreSQL/MySQL)]
 
 ---
 
