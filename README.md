@@ -14,10 +14,10 @@ Proyek ini dibuat sebagai bagian dari **Capstone Project**, dengan tujuan:
 ---
 
 ## Arsitektur Sistem
-flowchart LR
-  User[👤 User] --> |HTTP/HTTPS| Frontend[🌐 React.js Frontend]
-  Frontend --> |REST API| Backend[⚙️ Django REST API]
-  Backend --> |SQL Query| Database[(🗄️ PostgreSQL/MySQL)]
+flowchart LR :
+- User[👤 User] --> |HTTP/HTTPS| Frontend[🌐 React.js Frontend]
+- Frontend --> |REST API| Backend[⚙️ Django REST API]
+- Backend --> |SQL Query| Database[(🗄️ PostgreSQL/MySQL)]
 
 ---
 
