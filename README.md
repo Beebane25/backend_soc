@@ -14,7 +14,6 @@ Proyek ini dibuat sebagai bagian dari **Capstone Project**, dengan tujuan:
 ---
 
 ## Arsitektur Sistem
-```mermaid
 flowchart LR
   User[👤 User] --> |HTTP/HTTPS| Frontend[🌐 React.js Frontend]
   Frontend --> |REST API| Backend[⚙️ Django REST API]
